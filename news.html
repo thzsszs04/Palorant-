@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Palorant</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar(event)"><a class="menu" href="home.html" class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="29px" viewBox="0 -960 960 960" width="29px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="home.html" class="menu">Home</a></li>
+            <li><a href="agent.html" class="menu">Agents</a></li>
+            <li><a href="maps.html" class="menu">Maps</a></li>
+            <li><a href="news.html" class="menu">News</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="home.html" class="logo">PALORANT</a></li>
+            <li><a href="home.html" class="hideOnMobile menu">Home</a></li>
+            <li><a href="agent.html" class="hideOnMobile menu">Agents</a></li>
+            <li><a href="maps.html" class="hideOnMobile  menu">Maps</a></li>
+            <li><a href="news.html" class="hideOnMobile menu">News</a></li>
+            <li onclick="showSidebar(event)"><a href="" class="menu hamburger"><svg xmlns="http://www.w3.org/2000/svg" height="29px" viewBox="0 -960 960 960" width="29px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <div class="heading">
+        <h1>All Articles</h1>
+    </div>
+
+    <div class="news-container">
+        <div class="news-card">
+            <img src="images/news1.png" alt="Arcade Image">
+            <div class="news-card-content">
+                <h3 class="news-title">New Seasonal Maps: Christmas Edition North Pole</h3>
+                <p class="news-description">Patch 7.08 brings exciting updates to the Palorant maps! Haven now features adjusted sightlines at B Long for improved balance, and new cover placements have been added in Split’s mid area to encourage dynamic gameplay. Explore the changes and find new strategies to outsmart your opponents!</p>
+                <div class="news-card-footer">
+                    <h4 class="news-category">Map Updates</h4>
+                    <span class="news-date">05/12/2024</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="news-card">
+            <img src="images/news2.jpg" alt="Arcade Image">
+            <div class="news-card-content">
+                <h3 class="news-title">Palorant Online World Championship 2024 Kicks Off!</h3>
+                <p class="news-description">The stage is set for the biggest Palorant gaming competition of the year! Top teams from around the globe will battle it out for the ultimate title and a massive prize pool. Who will rise to the top and claim victory? Stay tuned for all the action! Stay tuned for all the action and exclusive behind-the-scenes content!</p>
+                <div class="news-card-footer">
+                    <h4 class="news-category">Gaming Competition</h4>
+                    <span class="news-date">11/11/2024</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="news-card">
+            <img src="images/news3.png" alt="Arcade Image">
+            <div class="news-card-content">
+                <h3 class="news-title">Celebrate Palorant’s Grand Anniversary Event in Style!</h3>
+                <p class="news-description">It’s time to honor another year of Palorant with epic in-game events and rewards! Unlock exclusive anniversary skins, sprays, and battle passes while enjoying special game modes and challenges. Don’t miss out on the festivities—join the celebration today! Participate in community contests for a chance to win!</p>
+                <div class="news-card-footer">
+                    <h4 class="news-category">Seasonal Event</h4>
+                    <span class="news-date">03/11/2024</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="news-card">
+            <img src="images/news4.jpg" alt="Arcade Image">
+            <div class="news-card-content">
+                <h3 class="news-title">Meet Clove: Palorant’s Newest Stealth Specialist!</h3>
+                <p class="news-description">Clove brings a fresh twist to Palorant with her tactical prowess and cloaking abilities! Master her precision traps and ultimate ability, Phantom Mirage, to outmaneuver opponents and control the battlefield. Ready to dominate with Clove? Step into the fight today! Don’t forget to check out her exclusive launch bundle in the store!</p>
+                <div class="news-card-footer">
+                    <h4 class="news-category">New Agent</h4>
+                    <span class="news-date">28/10/2024</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="news-card">
+            <img src="images/news5.jpg" alt="Arcade Image">
+            <div class="news-card-content">
+                <h3 class="news-title">Palorant Update 5.2: New Features and Improvements!</h3>
+                <p class="news-description">The latest update introduces improved matchmaking for fairer games and revamped UI for better in-game navigation. Experience enhanced weapon balancing and bug fixes to ensure smoother gameplay. Update 5.2 also adds new seasonal challenges and rewards—log in now and explore the changes!</p>
+                <div class="news-card-footer">
+                    <h4 class="news-category">Game Updates</h4>
+                    <span class="news-date">15/10/2024</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="news-card">
+            <img src="images/news6.jpg" alt="Arcade Image">
+            <div class="news-card-content">
+                <h3 class="news-title">Palorant Regional Showdown: Who Will Reign Supreme?</h3>
+                <p class="news-description">The top teams from each region are ready to clash in the ultimate Palorant Regional Showdown! Witness thrilling plays, strategic brilliance, and nail-biting moments as they compete for glory and a spot in the global finals. Don’t miss the action—tune in and cheer for your favorites!</p>
+                <div class="news-card-footer">
+                    <h4 class="news-category">Gaming Competition</h4>
+                    <span class="news-date">30/09/2024</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <h2 class="footer-logo">PALORANT</h2>
+            <p class="footer-description">
+                Outsmart, outplay, outlast—victory is earned in every calculated move.
+            </p>
+            <br>
+            <p>
+                Encounter a problem? Please report <a href="report.html" class="report-link">here</a>
+            </p>
+            <br>
+            <h3>Visit our social media</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/VALORANT/" class="social-link"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.youtube.com/channel/UC8CX0LD98EDXl4UYX1MDCXg" class="social-link"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/valorant/" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@valorant" class="social-link"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <hr>
+            <p class="copyright">
+                Copyright © 2024 All rights Reserved - Thaddeus Kendrick Andrian
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

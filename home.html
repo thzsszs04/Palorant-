@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Palorant</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar(event)"><a class="menu" href="home.html" class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="29px" viewBox="0 -960 960 960" width="29px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="home.html" class="menu">Home</a></li>
+            <li><a href="agent.html" class="menu">Agents</a></li>
+            <li><a href="maps.html" class="menu">Maps</a></li>
+            <li><a href="news.html" class="menu">News</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="home.html" class="logo">PALORANT</a></li>
+            <li><a href="home.html" class="hideOnMobile menu">Home</a></li>
+            <li><a href="agent.html" class="hideOnMobile menu">Agents</a></li>
+            <li><a href="maps.html" class="hideOnMobile  menu">Maps</a></li>
+            <li><a href="news.html" class="hideOnMobile menu">News</a></li>
+            <li onclick="showSidebar(event)"><a href="" class="menu hamburger"><svg xmlns="http://www.w3.org/2000/svg" height="29px" viewBox="0 -960 960 960" width="29px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="images/palorant_vid.mp4" type="video/mp4">
+        </video>
+        <div class="text-overlay">
+            <h2 class="banner1">PALORANT</h2>
+            <h5 class="banner2">a 5v5 character-based tactical FPS where precise gunplay meets unique agent abilities.</h5>
+        </div>
+    </div>
+
+   <div class="brief-section">
+        <div class="brief">
+            <div class="text-content">
+                <h1 class="brief-title">What is <span class="highlight">PALORANT</span>?</h1>
+                <p class="brief-desc">
+                    <strong class="highlight">PALORANT</strong> is a popular tactical first-person shooter developed by Riot Games.
+                    It features a team-based gameplay format where players choose unique characters,
+                    known as Agents, each with special abilities that complement the game's strategic
+                    depth. Teams compete in various objective-based rounds, alternating between attacking
+                    and defending roles. With a focus on precise gunplay and team coordination, Palorant
+                    has become a favorite among competitive gamers and esports enthusiasts.
+                </p>
+            </div>
+            <div class="image-container">
+                <img src="images/console.png" alt="Gaming Controller">
+            </div>
+        </div>
+   </div>
+
+    <div class="agent-section">
+        <div class="agent-container">
+            <div class="agent-image">
+                <img src="images/KAY_O.jpeg" alt="KAY/O">
+            </div>
+            <div class="agent-content">
+                <h3>Our Best Agent</h3>
+                <h2>KAY/O</h2>
+                <p>
+                    The best agent in Palorant often depends on personal playstyle,
+                    but many consider Kay/O to be a top-tier choice. Kay/O is an agile
+                    duelist with abilities that emphasize speed and mobility, allowing
+                    players to outmaneuver opponents and secure kills with precision.
+                    His skills, like the Dash and Updraft, make his ideal for aggressive
+                    plays and flanking, while his ultimate, Blade Storm, offers deadly
+                    accuracy with throwing knives.
+                </p>
+                <button onclick="window.location.href='agent.html'">See All Agents</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <h2 class="footer-logo">PALORANT</h2>
+            <p class="footer-description">
+                Outsmart, outplay, outlast—victory is earned in every calculated move.
+            </p>
+            <br>
+            <p>
+                Encounter a problem? Please report <a href="report.html" class="report-link">here</a>
+            </p>
+            <br>
+            <h3>Visit our social media</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/VALORANT/" class="social-link"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.youtube.com/channel/UC8CX0LD98EDXl4UYX1MDCXg" class="social-link"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/valorant/" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@valorant" class="social-link"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <hr>
+            <p class="copyright">
+                Copyright © 2024 All rights Reserved - Thaddeus Kendrick Andrian
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
