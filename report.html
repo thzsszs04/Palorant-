@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Palorant</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar(event)"><a class="menu" href="home.html" class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="29px" viewBox="0 -960 960 960" width="29px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="home.html" class="menu">Home</a></li>
+            <li><a href="agent.html" class="menu">Agents</a></li>
+            <li><a href="maps.html" class="menu">Maps</a></li>
+            <li><a href="news.html" class="menu">News</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="home.html" class="logo">PALORANT</a></li>
+            <li><a href="home.html" class="hideOnMobile menu">Home</a></li>
+            <li><a href="agent.html" class="hideOnMobile menu">Agents</a></li>
+            <li><a href="maps.html" class="hideOnMobile  menu">Maps</a></li>
+            <li><a href="news.html" class="hideOnMobile menu">News</a></li>
+            <li onclick="showSidebar(event)"><a href="" class="menu hamburger"><svg xmlns="http://www.w3.org/2000/svg" height="29px" viewBox="0 -960 960 960" width="29px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <div class="background">
+        <div class="form-container">
+            <h2>Report a Bug</h2>
+            <p class="report-description">Your feedback matters! Report any bugs or issues in Palorant to help us make the game even better.</p>
+            <form id="bugReportForm">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Input your username">
+                <div id="usernameError" class="error-message"></div>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Input your email">
+                <div id="emailError" class="error-message"></div>
+
+                <label for="server">Server</label>
+                <select id="server">
+                    <option value="">Select your server</option>
+                    <option value="north-america">North America</option>
+                    <option value="europe">Europe</option>
+                    <option value="asia">Asia</option>
+                    <option value="africa">Africa</option>
+                    <option value="south-america">South America</option>
+                </select>
+                <div id="serverError" class="error-message"></div>
+
+                <label for="description">Description</label>
+                <textarea id="description" placeholder="Input the description of the bug that you encountered"></textarea>
+                <div id="descriptionError" class="error-message"></div>
+
+                <div class="checkbox-container">
+                    <input type="checkbox" id="consent">
+                    <label for="consent">I consent to receiving follow-up emails about this bug report, knowing it contributes to making Palorant better for everyone.</label>
+                </div>
+                <div id="consentError" class="error-message"></div>
+
+                <button type="submit" onclick="validateForm()">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <h2 class="footer-logo">PALORANT</h2>
+            <p class="footer-description">
+                Outsmart, outplay, outlast—victory is earned in every calculated move.
+            </p>
+            <br>
+            <p>
+                Encounter a problem? Please report <a href="report.html" class="report-link">here</a>
+            </p>
+            <br>
+            <h3>Visit our social media</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/VALORANT/" class="social-link"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.youtube.com/channel/UC8CX0LD98EDXl4UYX1MDCXg" class="social-link"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/valorant/" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@valorant" class="social-link"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <hr>
+            <p class="copyright">
+                Copyright © 2024 All rights Reserved - Thaddeus Kendrick Andrian
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

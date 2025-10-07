@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Palorant</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar(event)"><a class="menu" href="home.html" class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="29px" viewBox="0 -960 960 960" width="29px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="home.html" class="menu">Home</a></li>
+            <li><a href="agent.html" class="menu">Agents</a></li>
+            <li><a href="maps.html" class="menu">Maps</a></li>
+            <li><a href="news.html" class="menu">News</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="home.html" class="logo">PALORANT</a></li>
+            <li><a href="home.html" class="hideOnMobile menu">Home</a></li>
+            <li><a href="agent.html" class="hideOnMobile menu">Agents</a></li>
+            <li><a href="maps.html" class="hideOnMobile  menu">Maps</a></li>
+            <li><a href="news.html" class="hideOnMobile menu">News</a></li>
+            <li onclick="showSidebar(event)"><a href="" class="menu hamburger"><svg xmlns="http://www.w3.org/2000/svg" height="29px" viewBox="0 -960 960 960" width="29px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <div class="maps-container">
+        <div class="heading">
+            <h1>Our Maps</h1>
+        </div>
+
+        <div class="map-card">
+            <div class="map-name">
+                <h2>Sunset</h2>
+            </div>
+            <div class="slider">
+                <div class="slides">
+                  <div class="slide">
+                    <img src="images/maps/sunset1.jpg" alt="Map 1">
+                  </div>
+                  <div class="slide">
+                    <img src="images/maps/sunset2.jpg" alt="Map 2">
+                  </div>
+                  <div class="slide">
+                    <img src="images/maps/sunset3.jpg" alt="Map 3">
+                  </div>
+                </div>
+                <div class="navigation">
+                  <button id="prev">&#8592;</button>
+                  <button id="next">&#8594;</button>
+                </div>
+            </div>
+            <div class="description">
+                <p>Nestled in the heart of a sun-soaked coastal city, Sunset blends vibrant urban life with a touch of chaos. This three-lane battleground is set against a backdrop of towering skyscrapers, bustling food trucks, and neon-lit alleyways. Agents must navigate narrow streets, rooftop vantage points, and a central market square, all while contending with sudden shifts in elevation and cleverly placed choke points. Whether you're setting up for a strategic ambush or sprinting to defuse the spike, the warm hues of the setting sun will remind you that danger is always just around the corner.</p>
+            </div>
+        </div>
+
+        <div class="map-card">
+            <div class="map-name">
+                <h2>Fracture</h2>
+            </div>
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="images/maps/fracture1.jpg" alt="Fracture Map Image 1">
+                    </div>
+                    <div class="slide">
+                        <img src="images/maps/fracture2.jpg" alt="Fracture Map Image 2">
+                    </div>
+                    <div class="slide">
+                        <img src="images/maps/fracture3.jpg" alt="Fracture Map Image 3">
+                    </div>
+                </div>
+                <div class="navigation">
+                    <button id="prev-fracture">&#8592;</button>
+                    <button id="next-fracture">&#8594;</button>
+                </div>
+            </div>
+            <div class="description">
+                <p>A cutting-edge research facility split by a catastrophic accident, Fracture challenges players with its unique H-shaped layout. With attackers spawning on both sides of the map, defenders must brace for unpredictable strategies and rapid rotations. From zipline traversals to tight corridors, every corner of Fracture demands quick thinking and sharp aim. Adapt or be outmaneuvered!</p>
+            </div>
+        </div>
+
+        <div class="map-card">
+            <div class="map-name">
+                <h2>Haven</h2>
+            </div>
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="images/maps/haven1.jpg" alt="Fracture Map Image 1">
+                    </div>
+                    <div class="slide">
+                        <img src="images/maps/haven2.jpg" alt="Fracture Map Image 2">
+                    </div>
+                    <div class="slide">
+                        <img src="images/maps/haven3.jpg" alt="Fracture Map Image 3">
+                    </div>
+                </div>
+                <div class="navigation">
+                    <button id="prev-fracture">&#8592;</button>
+                    <button id="next-fracture">&#8594;</button>
+                </div>
+            </div>
+            <div class="description">
+                <p>Set in a serene coastal village, Haven is a unique three-site map that pushes players to balance aggression and defense. Its open courtyards, narrow alleys, and interconnected pathways offer endless opportunities for flanking and creative plays. With so many options, the question isn’t just where to strike—but when!</p>
+            </div>
+        </div>
+
+        <div class="map-card">
+            <div class="map-name">
+                <h2>Breeze</h2>
+            </div>
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="images/maps/breeze1.jpg" alt="Fracture Map Image 1">
+                    </div>
+                    <div class="slide">
+                        <img src="images/maps/breeze2.jpg" alt="Fracture Map Image 2">
+                    </div>
+                    <div class="slide">
+                        <img src="images/maps/breeze3.jpg" alt="Fracture Map Image 3">
+                    </div>
+                </div>
+                <div class="navigation">
+                    <button id="prev-fracture">&#8592;</button>
+                    <button id="next-fracture">&#8594;</button>
+                </div>
+            </div>
+            <div class="description">
+                <p>Set on a remote tropical island, Breeze features wide-open spaces, long sightlines, and lush coastal scenery. The sprawling design rewards precise aim and creative use of cover. From the vibrant beachside to ancient ruins, every angle hides opportunities—and threats. Stay sharp under the sun!</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <h2 class="footer-logo">PALORANT</h2>
+            <p class="footer-description">
+                Outsmart, outplay, outlast—victory is earned in every calculated move.
+            </p>
+            <br>
+            <p>
+                Encounter a problem? Please report <a href="report.html" class="report-link">here</a>
+            </p>
+            <br>
+            <h3>Visit our social media</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/VALORANT/" class="social-link"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.youtube.com/channel/UC8CX0LD98EDXl4UYX1MDCXg" class="social-link"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/valorant/" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@valorant" class="social-link"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <hr>
+            <p class="copyright">
+                Copyright © 2024 All rights Reserved - Thaddeus Kendrick Andrian
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
